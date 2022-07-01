@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Roll the Dice!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-1 active">
+        <h1>PLAYER 1</h1>
+        <h2 class="total-score-1">0</h2>
+        <div class="current-score">
+          <p>current</p>
+          <h3 class="current-score-1">0</h3>
+        </div>
+      </div>
+      <div class="card card-2">
+        <h1>PLAYER 2</h1>
+        <h2 class="total-score-2">0</h2>
+        <div class="current-score">
+          <p>current</p>
+          <h3 class="current-score-2">0</h3>
+        </div>
+      </div>
+
+      <img class="dice" src="./dice-6.png" alt="dice" />
+
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <div class="winner-container hidden">
+        <button class="close-icon">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+        <h3>
+          Congratulations! <br />
+          Player <span class="winner">1</span> has won!!
+        </h3>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
