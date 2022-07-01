@@ -47,7 +47,7 @@ function rolling() {
 }
 
 function setDice(number) {
-  dice.src = `./dice-${number}.png`;
+  dice.src = `./images/dice-${number}.png`;
 }
 
 function randomNumberGenerator() {
